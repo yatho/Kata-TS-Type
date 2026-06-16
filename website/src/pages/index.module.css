@@ -1,0 +1,87 @@
+.heroBanner {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.heroEmoji {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.thesis {
+  padding: 3rem 0;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.thesisQuote {
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 1.5rem 2rem;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.thesisQuote p {
+  margin: 0;
+}
+
+.modulesSection {
+  padding: 4rem 0;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.moduleCard {
+  margin-bottom: 2rem;
+}
+
+.moduleCardInner {
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease;
+}
+
+.moduleCardInner:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.moduleEmoji {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.moduleNum {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.25rem;
+}
+
+.howItWorks {
+  padding: 4rem 0;
+  background: var(--ifm-color-emphasis-100);
+}

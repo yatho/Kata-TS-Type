@@ -1,0 +1,54 @@
+:root {
+  --ifm-color-primary: #6b46c1;
+  --ifm-color-primary-dark: #5a37a8;
+  --ifm-color-primary-darker: #55349f;
+  --ifm-color-primary-darkest: #462b83;
+  --ifm-color-primary-light: #7c55ca;
+  --ifm-color-primary-lighter: #8561cf;
+  --ifm-color-primary-lightest: #a080db;
+  --ifm-code-font-size: 92%;
+  --docusaurus-highlighted-code-line-bg: rgba(107, 70, 193, 0.1);
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #a080db;
+  --ifm-color-primary-dark: #8d67d3;
+  --ifm-color-primary-darker: #845dcf;
+  --ifm-color-primary-darkest: #6b46c1;
+  --ifm-color-primary-light: #b399e3;
+  --ifm-color-primary-lighter: #bca3e7;
+  --ifm-color-primary-lightest: #d0c1ef;
+  --docusaurus-highlighted-code-line-bg: rgba(160, 128, 219, 0.15);
+}
+
+/* Details/summary for solution reveals */
+details {
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::before {
+  content: "▶ ";
+  font-size: 0.75em;
+}
+
+details[open] summary::before {
+  content: "▼ ";
+}
+
+details[open] > *:not(summary) {
+  margin-top: 1rem;
+}
