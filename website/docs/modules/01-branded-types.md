@@ -49,7 +49,7 @@ type Brand<T, B> = T & { readonly [brand]: B };
 
 Avec cette base, `Brand<string, "TicketId">` est un `string` au runtime, mais un type **incompatible** avec `Brand<string, "VisitorId">` au niveau des types.
 
-:::tip Indice
+:::tip
 La seule façon de créer un branded type est via un **constructeur explicite** :
 
 ```typescript

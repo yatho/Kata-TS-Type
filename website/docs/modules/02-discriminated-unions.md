@@ -61,7 +61,7 @@ type Attraction =
 
 Le champ `kind` (ou `status`, `type`, `_tag`...) est le **discriminant** : TypeScript s'en sert pour réduire le type dans chaque branche du `if`.
 
-:::tip Indice
+:::tip
 Après le refactor, dans la branche `if (attraction.status === "open")`, TypeScript sait que `waitTimeMinutes` est un `number` — pas `number | undefined`. Les `??` disparaissent naturellement.
 :::
 

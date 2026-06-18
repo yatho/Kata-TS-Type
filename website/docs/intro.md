@@ -50,7 +50,7 @@ Chaque module suit le même schéma :
 4. **Validation** — comment savoir que vous avez réussi
 5. **Solution** — le code final commenté
 
-:::tip Conseil
+:::tip
 Résistez à l'envie de lire la solution en premier. Le moment où le compilateur refuse quelque chose qui compilait avant — c'est *ça* le kata.
 :::
 

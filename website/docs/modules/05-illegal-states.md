@@ -80,7 +80,7 @@ type NonEmptyArray<T> = [T, ...T[]];
 
 Ce type est satisfait par `[item]`, `[a, b, c]`, mais **pas** par `[]`.
 
-:::tip Indice
+:::tip
 Pour `NonEmptyArray`, TypeScript infère automatiquement que `arr[0]` est de type `T` (pas `T | undefined`), car la contrainte est dans le type.
 :::
 

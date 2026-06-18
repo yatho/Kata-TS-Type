@@ -64,7 +64,7 @@ function isTicket(x: unknown): x is Ticket {
 }
 ```
 
-:::tip Indice
+:::tip
 `parseTicket` devient : si `isTicket(input)` → retourner `input`, sinon → lancer une erreur. Plus aucun `as`.
 
 Pour les branded types du Module 1, la validation doit vérifier le type de base (`string`, `number`) — pas le brand, qui n'existe qu'à la compilation.

@@ -47,7 +47,7 @@ function assertNever(x: never): never {
 }
 ```
 
-:::tip Indice
+:::tip
 Remplacez `default: return 0` par `default: return assertNever(kind)`.
 
 TypeScript sait que si tous les cas du switch sont couverts, `kind` est de type `never` dans le `default`. Si vous ajoutez un cas sans le traiter, `kind` n'est plus `never` → erreur.
@@ -97,7 +97,8 @@ export function priceFor(kind: PassKind): number {
 - Analyse d'impact gratuite : `tsc` liste tous les endroits à mettre à jour
 - Plus de `default` silencieux qui masque des oublis
 
-:::note `assertNever` en pratique
+:::note
+`assertNever` en pratique
 Cette fonction est si courante qu'elle existe dans des librairies comme `ts-essentials` (`UnreachableCaseError`). Mais l'implémentation maison de 3 lignes suffit parfaitement.
 :::
 

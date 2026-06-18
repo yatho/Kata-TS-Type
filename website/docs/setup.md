@@ -23,8 +23,8 @@ Le script `setup-repo.sh` crée un repo avec une branche `exercice` (le code na�
 
 ```bash
 # Récupérez le kata
-git clone https://github.com/your-org/type-driven-theme-park-kata.git
-cd type-driven-theme-park-kata
+git clone https://github.com/yatho/Kata-TS-Type.git
+cd Kata-TS-Type
 
 # Créez le repo de travail
 bash setup-repo.sh mon-kata
@@ -73,7 +73,9 @@ La correction est dans `branch-solution/`.
 | `npm run typecheck` | Lance `tsc --noEmit` — votre feedback principal |
 | `npm run check` | Les deux ensemble |
 
-:::info Le cycle de travail
+:::info
+**Le cycle de travail**
+
 Pour chaque module : modifiez `src/0X-*.ts` → `npm run typecheck` → si les erreurs attendues apparaissent (ou disparaissent) → `npm test` pour vérifier qu'on n'a rien cassé.
 :::
 

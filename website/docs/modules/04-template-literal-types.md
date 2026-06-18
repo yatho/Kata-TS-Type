@@ -53,7 +53,7 @@ type ZoneCode = `${Sector}-${Digit}${Digit}`;
 
 Ce type décrit exactement les strings de la forme `"A-12"`, `"E-07"`, etc.
 
-:::tip Indice
+:::tip
 Pour les strings **dynamiques** venant de l'extérieur (user input, API), le type compile-time ne suffit pas. Exposez une fonction `isZoneCode(s: string): s is ZoneCode` qui valide la regex une seule fois à la frontière.
 :::
 
@@ -103,7 +103,9 @@ export function locate(code: ZoneCode): string {
 - `locate` ne valide plus — elle fait confiance au type
 - Un seul point de validation : `isZoneCode`, à la frontière (ex: lecture d'un fichier CSV)
 
-:::note Limites
+:::note
+**Limites**
+
 Les template literal types ne peuvent pas encoder toutes les regex. Ils fonctionnent parfaitement pour des formes structurées (codes, slugs, préfixes). Pour des règles complexes (longueur variable, lookaheads), les type predicates (Module 6) prennent le relais.
 :::
 
